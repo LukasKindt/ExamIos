@@ -15,6 +15,15 @@
 		80CDE85426C167AA005454E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80CDE85226C167AA005454E9 /* LaunchScreen.storyboard */; };
 		80CDE85F26C167AB005454E9 /* ExamIosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CDE85E26C167AB005454E9 /* ExamIosTests.swift */; };
 		80CDE86A26C167AB005454E9 /* ExamIosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CDE86926C167AB005454E9 /* ExamIosUITests.swift */; };
+		80CDE87C26C17774005454E9 /* Summary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CDE87B26C17774005454E9 /* Summary.swift */; };
+		80CDE88426C1786C005454E9 /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CDE88326C1786C005454E9 /* Chapter.swift */; };
+		80CDE88926C17881005454E9 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CDE88826C17881005454E9 /* Question.swift */; };
+		80CDE88F26C1850E005454E9 /* LearnCoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CDE88E26C1850E005454E9 /* LearnCoursesViewController.swift */; };
+		80CDE89426C18522005454E9 /* SummaryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CDE89326C18522005454E9 /* SummaryDetailsViewController.swift */; };
+		80CDE8A726C18ED9005454E9 /* LearnCoursesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CDE8A526C18ED9005454E9 /* LearnCoursesCollectionViewCell.swift */; };
+		80CDE8AD26C27A20005454E9 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CDE8AC26C27A20005454E9 /* Data.swift */; };
+		80CDE8CD26C3F077005454E9 /* LearnCoursesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80CDE8CC26C3F077005454E9 /* LearnCoursesCollectionViewCell.xib */; };
+		80CDE8ED26C53D06005454E9 /* AddSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CDE8EC26C53D06005454E9 /* AddSummaryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +58,15 @@
 		80CDE86526C167AB005454E9 /* ExamIosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExamIosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		80CDE86926C167AB005454E9 /* ExamIosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamIosUITests.swift; sourceTree = "<group>"; };
 		80CDE86B26C167AB005454E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80CDE87B26C17774005454E9 /* Summary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Summary.swift; sourceTree = "<group>"; };
+		80CDE88326C1786C005454E9 /* Chapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
+		80CDE88826C17881005454E9 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		80CDE88E26C1850E005454E9 /* LearnCoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnCoursesViewController.swift; sourceTree = "<group>"; };
+		80CDE89326C18522005454E9 /* SummaryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryDetailsViewController.swift; sourceTree = "<group>"; };
+		80CDE8A526C18ED9005454E9 /* LearnCoursesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnCoursesCollectionViewCell.swift; sourceTree = "<group>"; };
+		80CDE8AC26C27A20005454E9 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		80CDE8CC26C3F077005454E9 /* LearnCoursesCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LearnCoursesCollectionViewCell.xib; path = ../../../../.Trash/LearnCoursesCollectionViewCell.xib; sourceTree = "<group>"; };
+		80CDE8EC26C53D06005454E9 /* AddSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSummaryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +117,15 @@
 		80CDE84626C167A7005454E9 /* ExamIos */ = {
 			isa = PBXGroup;
 			children = (
+				80CDE88D26C184C6005454E9 /* ViewControllers */,
+				80CDE87A26C1775A005454E9 /* Models */,
 				80CDE84726C167A7005454E9 /* AppDelegate.swift */,
 				80CDE84926C167A7005454E9 /* SceneDelegate.swift */,
-				80CDE84B26C167A7005454E9 /* ViewController.swift */,
 				80CDE84D26C167A7005454E9 /* Main.storyboard */,
 				80CDE85026C167AA005454E9 /* Assets.xcassets */,
 				80CDE85226C167AA005454E9 /* LaunchScreen.storyboard */,
 				80CDE85526C167AA005454E9 /* Info.plist */,
+				80CDE8AC26C27A20005454E9 /* Data.swift */,
 			);
 			path = ExamIos;
 			sourceTree = "<group>";
@@ -126,6 +146,29 @@
 				80CDE86B26C167AB005454E9 /* Info.plist */,
 			);
 			path = ExamIosUITests;
+			sourceTree = "<group>";
+		};
+		80CDE87A26C1775A005454E9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				80CDE87B26C17774005454E9 /* Summary.swift */,
+				80CDE88326C1786C005454E9 /* Chapter.swift */,
+				80CDE88826C17881005454E9 /* Question.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		80CDE88D26C184C6005454E9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				80CDE84B26C167A7005454E9 /* ViewController.swift */,
+				80CDE88E26C1850E005454E9 /* LearnCoursesViewController.swift */,
+				80CDE8A526C18ED9005454E9 /* LearnCoursesCollectionViewCell.swift */,
+				80CDE8CC26C3F077005454E9 /* LearnCoursesCollectionViewCell.xib */,
+				80CDE89326C18522005454E9 /* SummaryDetailsViewController.swift */,
+				80CDE8EC26C53D06005454E9 /* AddSummaryViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +276,7 @@
 			files = (
 				80CDE85426C167AA005454E9 /* LaunchScreen.storyboard in Resources */,
 				80CDE85126C167AA005454E9 /* Assets.xcassets in Resources */,
+				80CDE8CD26C3F077005454E9 /* LearnCoursesCollectionViewCell.xib in Resources */,
 				80CDE84F26C167A7005454E9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,8 +302,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80CDE8ED26C53D06005454E9 /* AddSummaryViewController.swift in Sources */,
+				80CDE8A726C18ED9005454E9 /* LearnCoursesCollectionViewCell.swift in Sources */,
+				80CDE87C26C17774005454E9 /* Summary.swift in Sources */,
+				80CDE88426C1786C005454E9 /* Chapter.swift in Sources */,
+				80CDE88F26C1850E005454E9 /* LearnCoursesViewController.swift in Sources */,
 				80CDE84C26C167A7005454E9 /* ViewController.swift in Sources */,
+				80CDE88926C17881005454E9 /* Question.swift in Sources */,
+				80CDE89426C18522005454E9 /* SummaryDetailsViewController.swift in Sources */,
 				80CDE84826C167A7005454E9 /* AppDelegate.swift in Sources */,
+				80CDE8AD26C27A20005454E9 /* Data.swift in Sources */,
 				80CDE84A26C167A7005454E9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
