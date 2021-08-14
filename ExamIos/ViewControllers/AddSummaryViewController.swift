@@ -23,7 +23,7 @@ class AddSummaryViewController: UIViewController {
             let summary = Summary(name: txtTitle.text!, summary: txtSummary.text)
             data.summaries.append(summary)
 
-            dismiss(animated: true, completion: nil)
+            _ = navigationController?.popViewController(animated: true)
         }
     }
 }

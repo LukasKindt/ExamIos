@@ -7,10 +7,12 @@
 
 import UIKit
 
-class LearnCoursesViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource, UICollectionViewDelegate{
+class LearnCoursesViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource, UICollectionViewDelegate, UIGestureRecognizerDelegate{
     
     let data = Data.shared
     var clickedIndex: Int = -1
+    
+    var button: UIButton = UIButton()
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
@@ -40,19 +42,41 @@ class LearnCoursesViewController: UIViewController, UICollectionViewDelegateFlow
     }
     
     @objc func buttonClicked(_ sender: UIButton) {
-        print(data.summaries[sender.tag].summary)
         clickedIndex = sender.tag
+        
+        /*let longPress : UILongPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPress(gestureRecognizer:)))
+        longPress.minimumPressDuration = 0.5
+        longPress.delegate = self
+        longPress.delaysTouchesBegan = true
+        self.collectionView?.addGestureRecognizer(longPress)*/
+        
         
         //let summaryDetailsViewController = LearnChaptersViewController(index: sender.tag)
         //summaryDetailsViewController.
+        
+        
         performSegue(withIdentifier: "showDetailsSegue", sender: nil)
 
+        
         /*let destinationVC = LearnChaptersViewController()
         destinationVC.index = sender.tag
 
         destinationVC.performSegue(withIdentifier: "showDetailsSegue", sender: self)*/
 
         }
+    
+    /*@objc func handleLongPress(gestureRecognizer : UILongPressGestureRecognizer){
+        if (gestureRecognizer.state != .began) {
+            return
+        }
+
+        let p = gestureRecognizer.location(in: collectionView)
+
+        if let indexPath = collectionView?.indexPathForItem(at: p) {
+            print("Long press at item: \(indexPath.row)")
+        }
+
+    }*/
     
     
     @IBOutlet var collectionView: UICollectionView!
